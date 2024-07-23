@@ -7,6 +7,7 @@ from starlette.requests import Request
 from api.db.database import Base, engine
 from api.db.database import create_database
 from api.v1.routes.testimonial import route as testimonial
+from api.v1.routes.blog import blog
 
 from api.v1.routes.newsletter_router import newsletter
 from api.v1.routes.newsletter_router import (
@@ -49,6 +50,7 @@ app.include_router(auth)
 #app.include_router(users, tags=["Users"])
 
 app.include_router(testimonial, tags=["testimonial"])
+app.include_router(blog, tags=["blog"])
 app.include_router(api_version_one)
 
 app.include_router(user)

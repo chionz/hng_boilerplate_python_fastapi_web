@@ -10,3 +10,4 @@ from api.v1.models.role import Role
 from api.v1.models.permission import Permission
 from api.v1.models.newsletter import NEWSLETTER
 from api.v1.models.testimonials import Testimonial as TestimonialModel
+from api.v1.models.blog import Blog

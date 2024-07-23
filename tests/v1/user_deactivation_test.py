@@ -69,7 +69,7 @@ def create_user(test_db):
 		first_name='Test',
 		last_name='User',
         is_active=True,
-        is_admin=False
+        is_admin=True
     )
     test_db.add(user)
     test_db.commit()
